@@ -1,0 +1,53 @@
+{
+  "name": "munchy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "dev:server": "ts-node ./src/index.ts",
+    "dev:worker": "ts-node ./src/index-worker.ts",
+    "dev": "concurrently npm:dev:*",
+    "build": "tsc",
+    "start:server": "node ./dist/index.js",
+    "start:worker": "node ./dist/index-worker.js",
+    "start": "concurrently npm:start:*",
+    "generate:gql": "vite build --mode introspect"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "@vendure/admin-ui-plugin": "3.3.7",
+    "@vendure/asset-server-plugin": "^3.3.7",
+    "@vendure/core": "3.3.7",
+    "@vendure/email-plugin": "^3.3.7",
+    "@vendure/graphiql-plugin": "^3.3.7",
+    "dotenv": "17.2.0",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "pg": "8.16.3",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-draw": "^0.20.6"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/connect": "^3.4.38",
+    "@types/express": "^5.0.3",
+    "@types/express-serve-static-core": "^5.0.7",
+    "@types/http-errors": "^2.0.5",
+    "@types/leaflet": "^1.9.20",
+    "@types/long": "^4.0.2",
+    "@types/mime": "^3.0.4",
+    "@types/qs": "^6.14.0",
+    "@types/range-parser": "^1.2.7",
+    "@types/send": "^0.17.5",
+    "@types/serve-static": "^1.15.8",
+    "@vendure/cli": "3.3.7",
+    "@vendure/dashboard": "^3.3.7",
+    "concurrently": "9.2.0",
+    "typescript": "5.8.2",
+    "vite": "6.3.5"
+  },
+  "packageManager": "yarn@3.2.3+sha512.f26f951f67de0c6a33ee381e5ff364709c87e70eb5e65c694e4facde3512f1fa80b8679e6ba31ce7d340fbb46f08dd683af9457e240f25a204be7427940d767e",
+  "resolutions": {
+    "vite": "6.3.5"
+  }
+}
