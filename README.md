@@ -18,30 +18,6 @@
 
 ---
 
-## 📁 Structure
-
-src/
-├── plugins/
-│ └── delivery-zone/
-│ ├── api/
-│ │ ├── api-extensions.ts
-│ │ └── delivery-zone-admin.resolver.ts
-│ ├── dashboard/
-│ │ ├── index.tsx
-│ │ └── pages/DeliveryZonesPage.tsx
-│ ├── entities/delivery-zone.entity.ts
-│ ├── services/delivery-zone.service.ts
-│ ├── shipping/
-│ │ ├── delivery-zone-calculator.ts
-│ │ └── delivery-zone-checker.ts
-│ ├── constants.ts
-│ ├── types.ts
-│ └── delivery-zone.plugin.ts
-├── gql/
-│ ├── graphql.ts # generated gql.tada types
-│ └── graphql-env.d.ts
-
----
 
 ## 📦 Installation
 
